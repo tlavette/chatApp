@@ -1,0 +1,39 @@
+{
+  "name": "chat-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "migrate": "npx sequelize db:migrate",
+    "seed": "npx sequelize db:seed:all",
+    "reset": "npx sequelize db:migrate:undo:all && npx sequelize db:migrate",
+    "unseed": "npx sequelize db:seed:undo:all"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RFHold/chat-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RFHold/chat-app/issues"
+  },
+  "homepage": "https://github.com/RFHold/chat-app#readme",
+  "dependencies": {
+    "bcrypt": "^3.0.6",
+    "connect-mysql": "^2.2.5",
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "express-session": "^1.16.1",
+    "express-sessions": "^1.0.6",
+    "express-ws": "^4.0.0",
+    "mysql2": "^1.6.5",
+    "pug": "^2.0.3",
+    "sequelize": "^5.8.6",
+    "sequelize-cli": "^5.4.0",
+    "socket.io": "^2.2.0"
+  }
+}
